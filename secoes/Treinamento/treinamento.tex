@@ -1,0 +1,58 @@
+\section{Treinamento de modelos}
+
+\begin{frame}	
+	\begin{block}{Treinamento}	
+		\begin{itemize}
+			\item O algoritmo de treinamento é único para cada modelo mas o processo  de como se treinar um modelo é parecido
+			\item Os dados são dividos em treino (70\%) e teste (30\%)
+			\item O conjunto de treino é apresentado ao modelo com os rótulos de cada observação
+			\item Tipicamente usa-se uma validação cruzada para treinar o modelo
+		\end{itemize}		
+	\end{block}
+\end{frame}
+
+\begin{frame}	
+	\begin{block}{Validação Cruzada}	
+		\begin{itemize}
+			\item 10-fold cross validation
+		\end{itemize}
+				\begin{figure}[!htb]
+			\centering	
+			\includegraphics[height=4cm, width = 10cm]{./pic/kfold.png}
+			\caption{Obtido no link: \href{https://github.com/rasbt/python-machine-learning-book}{\color{blue}{ python-machine-learning-book } }}
+			\label{fig_matriz_confusao}
+		\end{figure}	
+	\end{block}
+\end{frame}
+
+
+\begin{frame}	
+	\begin{block}{Validação}	
+		\begin{itemize}
+			\item O modelo é validado com o conjunto de teste, o qual não deve exibir os rótulos para o modelo
+		\end{itemize}
+				\begin{figure}[!htb]
+			\centering	  				
+			\includegraphics[height=4cm, width = 10cm]{./pic/matrizConfusao.png}
+			\caption{Obtido no link: \href{http://www.scielo.br/pdf/eagri/v33n6/19.pdf}{\color{blue}{Scielo} }}	
+			\label{fig_matriz_confusao}
+		\end{figure}	
+	\end{block}
+\end{frame}
+
+\begin{frame}	
+	\begin{block}{Validação - outras métricas}	
+		\begin{itemize}
+			\item Se usarmos a matriz de confusão acima podemos obter outras métricas
+			\item Citar o problema das classes de seller (relacionar com $F1$)
+		\end{itemize}
+		\begin{equation*}
+			\setlength{\jot}{10pt}
+				\begin{aligned}
+					\textrm{Precision} &= \frac{TP}{TP + FP} \\
+					\textrm{Recall} &= \frac{TP}{TP + FN} \\
+					\textrm{F1} &= 2 * \left(  \frac{\textrm{Precision}  * \textrm{Recall}}{\textrm{Precision}  + \textrm{Recall}} \right)
+				\end{aligned}
+		\end{equation*}
+	\end{block}
+\end{frame}

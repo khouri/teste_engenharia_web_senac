@@ -1,0 +1,7 @@
+\babel@toc {brazil}{}
+\beamer@sectionintoc {3}{Processo de Data Science}{9}{0}{1}
+\beamer@sectionintoc {4}{Engenharia de features}{10}{0}{2}
+\beamer@sectionintoc {5}{Overview de modelos}{11}{0}{3}
+\beamer@sectionintoc {6}{Treinamento de modelos}{12}{0}{4}
+\beamer@sectionintoc {7}{Ferramentas}{16}{0}{5}
+\beamer@sectionintoc {9}{Contato}{20}{0}{6}
